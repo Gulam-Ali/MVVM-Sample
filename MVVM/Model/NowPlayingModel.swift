@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct NowplayingModel : Decodable {
+struct NowplayingModel : Decodable,Hashable {
     var results : [resultsModel]?
 }
 
-struct resultsModel : Decodable {
+struct resultsModel : Decodable,Hashable {
     var adult : Bool?
     var backdrop_path : String?
     var id : Int?
